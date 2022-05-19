@@ -54,6 +54,14 @@ public extension PanModalPresentable where Self: UIViewController {
     var dragIndicatorBackgroundColor: UIColor {
         return UIColor.lightGray
     }
+    
+    var dragIndicatorSize: CGSize {
+        return PanModalPresentationController.Constants.defaultDragIndicatorSize
+    }
+    
+    var dragIndicatorYOffset: CGFloat {
+        return PanModalPresentationController.Constants.defaultDragIndicatorYOffset
+    }
 
     var scrollIndicatorInsets: UIEdgeInsets {
         let top = shouldRoundTopCorners ? cornerRadius : 0
